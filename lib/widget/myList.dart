@@ -12,7 +12,7 @@ class MyList extends GetView<HomeController> {
     return Container(
       height: 150,
       child: ListView.separated(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context, index) => VerticalDivider(
           color: Colors.transparent,
